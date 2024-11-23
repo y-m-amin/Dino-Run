@@ -1,8 +1,8 @@
 [gd_scene load_steps=24 format=3 uid="uid://eybo10uw74o8"]
 
 [ext_resource type="Script" path="res://dino.gd" id="1_88xei"]
-[ext_resource type="Texture2D" path="res://assets/dinoCharactersVersion1.1/sheets/DinoSprites - mort.png" id="1_k8h6w"]
-[ext_resource type="AudioStream" path="res://assets/458641__matrixxx__retro-jump-02.wav" id="2_y1grc"]
+[ext_resource type="Texture2D" uid="uid://dxie674t1p15y" path="res://assets/dinoCharactersVersion1.1/sheets/DinoSprites - mort.png" id="1_k8h6w"]
+[ext_resource type="AudioStream" uid="uid://bhcb2wuy77u0h" path="res://assets/458641__matrixxx__retro-jump-02.wav" id="2_y1grc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t55pe"]
 atlas = ExtResource("1_k8h6w")
@@ -120,7 +120,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -153,14 +153,14 @@ size = Vector2(10.125, 14.875)
 size = Vector2(10.625, 12.375)
 
 [node name="Dino" type="CharacterBody2D"]
-scale = Vector2(8, 8)
+scale = Vector2(6, 6)
 script = ExtResource("1_88xei")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 1
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_a4n5p")
-animation = &"idle"
+animation = &"duck"
 autoplay = "idle"
 
 [node name="RunCol" type="CollisionShape2D" parent="."]

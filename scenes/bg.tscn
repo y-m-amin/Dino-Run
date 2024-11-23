@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://box8m7f217d4s"]
 
-[ext_resource type="Texture2D" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-1.png" id="1_s2tqb"]
-[ext_resource type="Texture2D" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-2.png" id="2_pfced"]
-[ext_resource type="Texture2D" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-3.png" id="3_iatcr"]
-[ext_resource type="Texture2D" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-4.png" id="4_wdevm"]
-[ext_resource type="Texture2D" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-5.png" id="5_n4fs8"]
+[ext_resource type="Texture2D" uid="uid://dxn4ad33xvf4o" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-1.png" id="1_s2tqb"]
+[ext_resource type="Texture2D" uid="uid://dv5qbtfrgkpd1" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-2.png" id="2_pfced"]
+[ext_resource type="Texture2D" uid="uid://ywkrgeqyov8a" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-3.png" id="3_iatcr"]
+[ext_resource type="Texture2D" uid="uid://celwq015veduv" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-4.png" id="4_wdevm"]
+[ext_resource type="Texture2D" uid="uid://bwg1y6b3ik8ph" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/parallax background/plx-5.png" id="5_n4fs8"]
 
 [node name="Bg" type="ParallaxBackground"]
 
@@ -21,7 +21,7 @@ texture = ExtResource("2_pfced")
 centered = false
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.8, 1)
+motion_scale = Vector2(0.7, 1)
 motion_mirroring = Vector2(384, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2"]
@@ -29,7 +29,7 @@ texture = ExtResource("3_iatcr")
 centered = false
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.9, 1)
+motion_scale = Vector2(0.85, 1)
 motion_mirroring = Vector2(384, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer3"]
@@ -37,7 +37,7 @@ texture = ExtResource("4_wdevm")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.95, 1)
+motion_scale = Vector2(0.98, 1)
 motion_mirroring = Vector2(384, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
