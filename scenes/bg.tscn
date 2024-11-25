@@ -37,7 +37,7 @@ texture = ExtResource("4_wdevm")
 centered = false
 
 [node name="ParallaxLayer4" type="ParallaxLayer" parent="."]
-motion_scale = Vector2(0.98, 1)
+motion_scale = Vector2(0.9, 0.918)
 motion_mirroring = Vector2(384, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]

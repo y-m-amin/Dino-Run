@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cap0s75yolmwk" path="res://assets/free-swamp-game-tileset-pixel-art/3 Objects/Ridges/2.png" id="1_g0oke"]
 
 [node name="Stump" type="StaticBody2D"]
-scale = Vector2(4, 4)
+scale = Vector2(2.5, 2.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1

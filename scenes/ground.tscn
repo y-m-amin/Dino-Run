@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://bbxrt74d8n86a"]
+[gd_scene load_steps=6 format=4 uid="uid://bbxrt74d8n86a"]
 
 [ext_resource type="Texture2D" uid="uid://dy6bxusk0mbsn" path="res://assets/Jungle Asset Pack/Jungle Asset Pack/jungle tileset/jungle tileset.png" id="1_w5xga"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_6hykf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gtajt"]
 size = Vector2(1792, 80)
@@ -351,8 +353,12 @@ sources/0 = SubResource("TileSetAtlasSource_4drjl")
 
 [node name="Ground" type="StaticBody2D"]
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(155.25, 13.5)
+scale = Vector2(311.5, 29)
+texture = SubResource("CanvasTexture_6hykf")
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 z_index = 2
 position = Vector2(896, 40)
 shape = SubResource("RectangleShape2D_gtajt")

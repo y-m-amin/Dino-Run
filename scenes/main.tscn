@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://bxt4kh38ynmtq"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_5tkf6"]
-[ext_resource type="PackedScene" uid="uid://box8m7f217d4s" path="res://bg.tscn" id="1_b4mmd"]
-[ext_resource type="PackedScene" uid="uid://bbxrt74d8n86a" path="res://ground.tscn" id="2_hjjpq"]
-[ext_resource type="PackedScene" uid="uid://eybo10uw74o8" path="res://dino.tscn" id="3_upv4q"]
-[ext_resource type="PackedScene" uid="uid://wr781d25y4nw" path="res://hud.tscn" id="5_ghtia"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_5tkf6"]
+[ext_resource type="PackedScene" uid="uid://box8m7f217d4s" path="res://scenes/bg.tscn" id="1_b4mmd"]
+[ext_resource type="PackedScene" uid="uid://bbxrt74d8n86a" path="res://scenes/ground.tscn" id="2_hjjpq"]
+[ext_resource type="PackedScene" uid="uid://eybo10uw74o8" path="res://scenes/dino.tscn" id="3_upv4q"]
+[ext_resource type="PackedScene" uid="uid://wr781d25y4nw" path="res://scenes/hud.tscn" id="5_ghtia"]
 
 [node name="Node" type="Node"]
 script = ExtResource("1_5tkf6")
@@ -17,7 +17,7 @@ transform = Transform2D(3, 0, 0, 3, 0, 0)
 position = Vector2(0, 614)
 
 [node name="Dino" parent="." instance=ExtResource("3_upv4q")]
-position = Vector2(96, 544)
+position = Vector2(114, 548)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 325)

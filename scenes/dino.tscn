@@ -1,6 +1,6 @@
 [gd_scene load_steps=24 format=3 uid="uid://eybo10uw74o8"]
 
-[ext_resource type="Script" path="res://dino.gd" id="1_88xei"]
+[ext_resource type="Script" path="res://scripts/dino.gd" id="1_88xei"]
 [ext_resource type="Texture2D" uid="uid://dxie674t1p15y" path="res://assets/dinoCharactersVersion1.1/sheets/DinoSprites - mort.png" id="1_k8h6w"]
 [ext_resource type="AudioStream" uid="uid://bhcb2wuy77u0h" path="res://assets/458641__matrixxx__retro-jump-02.wav" id="2_y1grc"]
 
@@ -153,18 +153,18 @@ size = Vector2(10.125, 14.875)
 size = Vector2(10.625, 12.375)
 
 [node name="Dino" type="CharacterBody2D"]
-scale = Vector2(6, 6)
+scale = Vector2(7, 7)
 script = ExtResource("1_88xei")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 1
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_a4n5p")
-animation = &"duck"
+animation = &"jump"
 autoplay = "idle"
+frame_progress = 0.805912
 
 [node name="RunCol" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(-0.6875, -0.5625)
 shape = SubResource("RectangleShape2D_cod0r")
 

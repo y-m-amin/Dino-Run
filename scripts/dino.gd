@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -800
-const GRAVITY :int = 1500
+const JUMP_VELOCITY = -950
+const GRAVITY :int = 1600
 
 func _physics_process(delta: float) -> void:
 	
@@ -16,7 +16,7 @@ func _physics_process(delta: float) -> void:
 			$RunCol.disabled = false
 			if Input.is_action_just_pressed("ui_accept") :
 				velocity.y = JUMP_VELOCITY
-				$AudioStreamPlayer.play()
+				#$AudioStreamPlayer.play()
 				
 			elif Input.is_action_pressed("ui_down"):
 				$AnimatedSprite2D.play("duck")
