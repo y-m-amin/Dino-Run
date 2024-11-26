@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://crnuhjordtafr" path="res://assets/free-swamp-game-tileset-pixel-art/3 Objects/Stones/4.png" id="1_il4xj"]
 
-[node name="Stone" type="StaticBody2D"]
+[node name="Stone" type="Area2D"]
 scale = Vector2(1.8, 1.8)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
